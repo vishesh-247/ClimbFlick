@@ -7,6 +7,8 @@ TagManager:
   - Enemy
   - Lava
   - Ground
+  - Rope
+  - Trap
   layers:
   - Default
   - TransparentFX

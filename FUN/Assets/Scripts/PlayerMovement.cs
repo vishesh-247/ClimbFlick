@@ -23,24 +23,46 @@ public class PlayerMovement : MonoBehaviour
 
     public Animator anim;
 
+    private float _vertical;
+    public float climbSpeed;
+    private bool _isClimbing;
+
+    public int playerHealth;
+    
+    private HashSet<GameObject> rope = new HashSet<GameObject>();   
+
  
 
     void Start()
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         rb = GetComponent<Rigidbody2D>();
+        playerHealth = 100;
        
     }
 
    
     private void FixedUpdate()
     {
+
+        if(_isClimbing)
+        {
+            rb.gravityScale = 0f;
+            rb.velocity= new Vector2(rb.velocity.x, _vertical * climbSpeed);    
+
+        }
+        else
+        {
+            rb.gravityScale = 4f;
+        }
             moveInput = Input.GetAxisRaw("Horizontal"); 
         rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
     }
 
     void Update()
     {
+
+        _vertical= Input.GetAxisRaw("Vertical");
 
         if(moveInput != 0)
         {
@@ -84,6 +106,17 @@ public class PlayerMovement : MonoBehaviour
         {
             isJumping = false;
         }
+
+        if(rope.Count > 0 && Mathf.Abs(_vertical)>0)
+        {
+            _isClimbing = true;
+           
+        }
+        else if(rope.Count <= 0 )
+        {
+            _isClimbing = false;
+            
+        }
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -101,13 +134,29 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-
+  
     void OnTriggerEnter2D(Collider2D other)
     {
+
+        if(other.CompareTag("Rope"))
+        {
+            rope.Add(other.gameObject); 
+            
+        }
         if (other.CompareTag("Lava"))
         {
             Respawn();
         }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if(other.CompareTag("Rope"))
+        {
+            rope.Remove(other.gameObject);  
+
+        }
+
     }
 
     void Respawn()
