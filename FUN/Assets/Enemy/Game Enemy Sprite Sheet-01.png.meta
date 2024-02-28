@@ -1,0 +1,615 @@
+fileFormatVersion: 2
+guid: 81252de68ea025f4391376ba0284c2ca
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Game Enemy Sprite Sheet-01_0
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 3725
+        width: 820
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed58a13f3d752cb43bdf3ced1c598da5
+      internalID: 964005627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Enemy Sprite Sheet-01_1
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 3703
+        width: 721
+        height: 545
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a53819a9081b8441813ceb6310b2c80
+      internalID: 1100107595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Enemy Sprite Sheet-01_2
+      rect:
+        serializedVersion: 2
+        x: 1819
+        y: 3697
+        width: 781
+        height: 551
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06197c7af84c09b499d3d21e27f55148
+      internalID: -562340096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Enemy Sprite Sheet-01_3
+      rect:
+        serializedVersion: 2
+        x: 7201
+        y: 4178
+        width: 715
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca8416112de92ee41abb565963bd1f88
+      internalID: 218846589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Enemy Sprite Sheet-01_4
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 2986
+        width: 824
+        height: 551
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9faa34ba015ff84b83abc45ad3c16b0
+      internalID: 1323987528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Enemy Sprite Sheet-01_5
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 2960
+        width: 816
+        height: 569
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12ef06516337f0b4dba79a7887f1b7e0
+      internalID: 2064206722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Enemy Sprite Sheet-01_6
+      rect:
+        serializedVersion: 2
+        x: 1979
+        y: 2947
+        width: 816
+        height: 567
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb46d826ebb1a8443aa644ac1d9666a6
+      internalID: 524788110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Enemy Sprite Sheet-01_7
+      rect:
+        serializedVersion: 2
+        x: 2866
+        y: 2936
+        width: 816
+        height: 566
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52b7681e650fcfd4489877390ac68d4b
+      internalID: -2047309405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Enemy Sprite Sheet-01_8
+      rect:
+        serializedVersion: 2
+        x: 3799
+        y: 2912
+        width: 824
+        height: 551
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddd724f7eb60e0f459ff3e1289c3656c
+      internalID: -2127534994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Enemy Sprite Sheet-01_9
+      rect:
+        serializedVersion: 2
+        x: 4693
+        y: 2897
+        width: 816
+        height: 531
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a177e37459dec95409f39564b72c59f1
+      internalID: 1148670068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Enemy Sprite Sheet-01_10
+      rect:
+        serializedVersion: 2
+        x: 5541
+        y: 2900
+        width: 824
+        height: 551
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe41f917266eb8945918228fcc347e30
+      internalID: 783303476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Enemy Sprite Sheet-01_11
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 2072
+        width: 820
+        height: 551
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dde4da785105f48418cecfc2475ed795
+      internalID: 829347309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Enemy Sprite Sheet-01_12
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 2068
+        width: 824
+        height: 551
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7174aef6924ceb9489a0707560847d23
+      internalID: -1258354660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Enemy Sprite Sheet-01_13
+      rect:
+        serializedVersion: 2
+        x: 1955
+        y: 2041
+        width: 824
+        height: 555
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38d1595e169b6a74db49175ce66473f2
+      internalID: -1687934343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Enemy Sprite Sheet-01_14
+      rect:
+        serializedVersion: 2
+        x: 2854
+        y: 2034
+        width: 823
+        height: 553
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d3c024fcaa492b4fa41b3482d1eaf2f
+      internalID: -2030529504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Enemy Sprite Sheet-01_15
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 1213
+        width: 824
+        height: 551
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee4f3600ab38b594d998f508379970c2
+      internalID: 1109834078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Enemy Sprite Sheet-01_16
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 1209
+        width: 815
+        height: 551
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61709d2558df1bd4398f00d1849c9dc7
+      internalID: 69365012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Enemy Sprite Sheet-01_17
+      rect:
+        serializedVersion: 2
+        x: 1998
+        y: 1201
+        width: 820
+        height: 551
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28f58d4ab1dd12e418cb50df88104d65
+      internalID: -882708588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Enemy Sprite Sheet-01_18
+      rect:
+        serializedVersion: 2
+        x: 7186
+        y: 1377
+        width: 718
+        height: 547
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c54445b6ffcf07f43b2c094c7ee24f28
+      internalID: -506825517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Enemy Sprite Sheet-01_19
+      rect:
+        serializedVersion: 2
+        x: 7119
+        y: 725
+        width: 781
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92b906ff3a21d60409d9b831475dfe29
+      internalID: -1846328286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Enemy Sprite Sheet-01_20
+      rect:
+        serializedVersion: 2
+        x: 7197
+        y: 119
+        width: 707
+        height: 473
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba44c17931688e043bbb221dca8d6793
+      internalID: -1815839841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Game Enemy Sprite Sheet-01_0: 964005627
+      Game Enemy Sprite Sheet-01_1: 1100107595
+      Game Enemy Sprite Sheet-01_10: 783303476
+      Game Enemy Sprite Sheet-01_11: 829347309
+      Game Enemy Sprite Sheet-01_12: -1258354660
+      Game Enemy Sprite Sheet-01_13: -1687934343
+      Game Enemy Sprite Sheet-01_14: -2030529504
+      Game Enemy Sprite Sheet-01_15: 1109834078
+      Game Enemy Sprite Sheet-01_16: 69365012
+      Game Enemy Sprite Sheet-01_17: -882708588
+      Game Enemy Sprite Sheet-01_18: -506825517
+      Game Enemy Sprite Sheet-01_19: -1846328286
+      Game Enemy Sprite Sheet-01_2: -562340096
+      Game Enemy Sprite Sheet-01_20: -1815839841
+      Game Enemy Sprite Sheet-01_3: 218846589
+      Game Enemy Sprite Sheet-01_4: 1323987528
+      Game Enemy Sprite Sheet-01_5: 2064206722
+      Game Enemy Sprite Sheet-01_6: 524788110
+      Game Enemy Sprite Sheet-01_7: -2047309405
+      Game Enemy Sprite Sheet-01_8: -2127534994
+      Game Enemy Sprite Sheet-01_9: 1148670068
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

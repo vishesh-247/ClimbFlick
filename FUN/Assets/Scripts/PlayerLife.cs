@@ -52,11 +52,12 @@ public class PlayerLife : MonoBehaviour
     }
     private void Die()
     {
+        GetComponent<LootBag>() .InstantiateLoot(transform.position);    
         Destroy(gameObject);    
         RestartLevel();
     }
 
-    private void RestartLevel()
+    public  void RestartLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }   

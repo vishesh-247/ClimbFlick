@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -29,7 +30,11 @@ public class PlayerMovement : MonoBehaviour
 
     public int playerHealth;
     
-    private HashSet<GameObject> rope = new HashSet<GameObject>();   
+    private HashSet<GameObject> rope = new HashSet<GameObject>();
+
+    public GameObject gameOverScreen;
+
+    public AudioManager audioManager;   
 
  
 
@@ -145,7 +150,10 @@ public class PlayerMovement : MonoBehaviour
         }
         if (other.CompareTag("Lava"))
         {
-            Respawn();
+
+           
+
+            GameOver(); 
         }
     }
 
@@ -159,10 +167,21 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
+    void GameOver()
+    {
+        Destroy(gameObject);    
+        gameOverScreen.SetActive(true);
+        Time.timeScale = 0;
+
+
+    }
+
     void Respawn()
     {
         // Teleport the player to the respawn point
+
         
         transform.position = gameManager.respawnPoint.position;
+
     }
 }
