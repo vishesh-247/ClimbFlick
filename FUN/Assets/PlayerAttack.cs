@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
+    public ShootScript shootScript; 
     public int damage;
     private float timeBtwAttack;
     public float startTimeBtwAttack;
@@ -22,6 +23,7 @@ public class PlayerAttack : MonoBehaviour
             {
                 if (!isPunching) // Check if not already punching
                 {
+                    shootScript.enabled = false;
                     playerAnim.Play("Punch_anim");
                     isPunching = true;
                     Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
@@ -34,6 +36,7 @@ public class PlayerAttack : MonoBehaviour
             }
             else
             {
+                shootScript.enabled = true;
                 isPunching = false;
                 playerAnim.Play("Idle_Anim"); // Assuming "Idle_anim" is the name of your idle animation state
             }
