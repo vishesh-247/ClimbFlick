@@ -54,11 +54,8 @@ public class PlayerLife : MonoBehaviour
     {
         GetComponent<LootBag>() .InstantiateLoot(transform.position);    
         Destroy(gameObject);    
-        RestartLevel();
+        
     }
 
-    public  void RestartLevel()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }   
+       
 }

@@ -9,6 +9,7 @@ TagManager:
   - Ground
   - Rope
   - Trap
+  - PowerUp
   layers:
   - Default
   - TransparentFX

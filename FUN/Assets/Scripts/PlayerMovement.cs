@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
@@ -43,6 +44,7 @@ public class PlayerMovement : MonoBehaviour
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         rb = GetComponent<Rigidbody2D>();
         playerHealth = 100;
+        gameOverScreen.SetActive(false);
        
     }
 
@@ -123,6 +125,8 @@ public class PlayerMovement : MonoBehaviour
             
         }
     }
+
+   
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
@@ -174,6 +178,15 @@ public class PlayerMovement : MonoBehaviour
         Time.timeScale = 0;
 
 
+    }
+
+    public void Reset()
+    {
+        gameOverScreen.SetActive(false);
+        Time.timeScale = 1;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        
+        
     }
 
     void Respawn()
