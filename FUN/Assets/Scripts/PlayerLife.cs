@@ -53,7 +53,8 @@ public class PlayerLife : MonoBehaviour
     private void Die()
     {
         GetComponent<LootBag>() .InstantiateLoot(transform.position);    
-        Destroy(gameObject);    
+        Destroy(gameObject); 
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         
     }
 

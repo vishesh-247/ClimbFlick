@@ -4,22 +4,55 @@ using UnityEngine;
 
 public class BulletScript : MonoBehaviour
 {
-    GameObject target;
-    public float speed;
-    Rigidbody2D bulletRB;
-    // Start is called before the first frame update
-    void Start()
+    private GameObject player;
+    private Rigidbody2D rb;
+    public float force;
+     
+
+
+    private float timer;
+
+    
+
+    
+
+    
+
+
+    private void Start()
     {
-        bulletRB = GetComponent<Rigidbody2D>();
-        target = GameObject.FindGameObjectWithTag("Player");
+           
+        rb = GetComponent<Rigidbody2D>();
+        player = GameObject.FindGameObjectWithTag("Player");
 
-        Vector2 moveDirection = (target.transform.position - transform.position).normalized * speed;
-        bulletRB.velocity = new Vector2(moveDirection.x, moveDirection.y);
-        Destroy(gameObject, 2f);
+        Vector3 direction = player.transform.position - transform.position;
+        rb.velocity = new Vector2(direction.x, direction.y).normalized * force;
 
-        // Adjust rotation to look at the target
-        float angle = Mathf.Atan2(moveDirection.y, moveDirection.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        float rot=Mathf.Atan2(-direction.y,-direction.x)*Mathf.Rad2Deg; 
+        transform.rotation=Quaternion.Euler(0,0,rot+90);
+    }
+
+    private void Update()
+    {
+        timer += Time.deltaTime;
+        if (timer >= 10)
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            
+
+            other.gameObject.GetComponent<HealthBar>().UpdateHealth(-10);
+            other.GetComponent<PlayerMovement>().playerHealth -= 10;
+
+
+            Destroy(gameObject);
+        }
     }
 
 
